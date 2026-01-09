@@ -324,6 +324,12 @@ p {
     }
 }
 
+@media only screen and (min-width: 678px) {
+    .Mobile_only {
+        display: none !important;
+    }
+}
+
 
 /* ------------------=============== Body Section ================--------------------- */
 .page-width {
@@ -922,9 +928,9 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-    .section_press_logos_outer .section_holder {
-        /* padding: 14px 20px; */
-    }
+    /* .section_press_logos_outer .section_holder {
+        padding: 14px 20px;
+    } */
 
     .section_press_logos_outer .logos_wrap img {
         max-height: 20px;
@@ -935,8 +941,143 @@ p {
         font-size: 18px;
     }
 
-    .section_press_logos_outer .logos_wrap {
-        /* animation: logo_scroll 20s infinite linear; */
+    /* .section_press_logos_outer .logos_wrap {
+        animation: logo_scroll 20s infinite linear;
+    } */
+}
+
+/* How happen Section */
+.product_judge-outer {
+    padding: 56px 0;
+}
+.product_judge-outer.outer_why-bloating {
+    padding-bottom: 0;
+}
+.product_judge-container {
+    max-width: 800px;
+    margin: auto;
+}
+.product-section_title {
+    font-size: 32px;
+    line-height: 1.3em;
+    margin: 16px 0;
+    font-weight: 400;
+    font-family: Lora;
+}
+.centered {
+    text-align: center;
+}
+.product-section_title span {
+    color: #039869;
+}
+.product-section_text {
+    font-size: 18px;
+    margin: 16px 0;
+    line-height: 1.3em;
+}
+.product_why-bloating-grid {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+}
+.product_why-bloating-grid>div {
+    width: 100%;
+}
+.product_why-bloating-cell {
+    border-radius: 6px;
+    overflow: hidden;
+}
+.product_why-bloating-cell div img, .product_why-bloat-cell-inn {
+    min-height: 150px;
+    padding-bottom: 10px;
+}
+.product_why-bloat-cell-inn {
+    padding: 16px;
+    text-align: center;
+    background: #f7f7f7;
+}
+.product_why-bloat-cell-inn p {
+    margin: 0;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+.product_why-note-img {
+    width: 100%;
+    max-width: 920px;
+    margin: auto;
+}
+.product_arrow-img {
+    display: block;
+    width: 100%;
+    max-width: 48px;
+    margin: 24px auto;
+}
+.product_judge-outer.pli_outer {
+    padding-top: 0;
+    margin-top: -16px;
+}
+.product_judge-container {
+    max-width: 800px;
+    margin: auto;
+}
+.pli_flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.pli_flex>div {
+    width: 100%;
+}
+.pli_top-text *, .pli_pink-text *, .pli_bottom-text * {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 8px 0;
+}
+.pli_top-text ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+.pli_top-text li {
+    padding-left: 32px;
+    color: #0c7c00;
+    background-image: url(https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    list-style: none;
+    font-weight: 600;
+}
+.pli_pink-text {
+    margin: 24px 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #ffe3e3;
+}
+.pli_bottom-text ul, .pli_pink-text ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+.pli_bottom-text li, .pli_pink-text li {
+    padding-left: 32px;
+    color: #a60003;
+    background-image: url(https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    list-style: none;
+    font-weight: 600;
+    font-family: Nunito;
+}
+.pli_flex img {
+    display: block;
+    width: 100%;
+}
+.pli_flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+@media only screen and (min-width: 678px) {
+    .pli_flex.reversed {
+        flex-direction: row-reverse;
     }
 }
 
