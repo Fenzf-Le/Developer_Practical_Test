@@ -1162,7 +1162,8 @@
                             class="product-reviews_trust">
                         <h2 class="product-section_title centered">Real Women, Real Results: 93,000+ Transformations
                         </h2>
-                        <p class="product-section_text centered" style="font-family: Nunito;">All reviews verified from actual paying customers</p>
+                        <p class="product-section_text centered" style="font-family: Nunito;">All reviews verified from
+                            actual paying customers</p>
                     </div>
 
 
@@ -1283,41 +1284,43 @@
 
                                         <div class="jdgm-form__fieldset" aria-label="Rating">
                                             <label>Rating</label>
-                                            <span class="jdgm-form__rating" style="cursor: pointer;"><a data-alt="1"
-                                                    class="jdgm-star jdgm--off" title="1 star" role="button"
+                                            <span class="jdgm-form__rating" style="cursor: pointer;">
+                                                <a data-alt="1" class="jdgm-star jdgm--off" title="1 star" role="button"
                                                     aria-label="1 star"></a><a data-alt="2" class="jdgm-star jdgm--off"
                                                     title="2 stars" role="button" aria-label="2 stars"></a><a
                                                     data-alt="3" class="jdgm-star jdgm--off" title="3 stars"
                                                     role="button" aria-label="3 stars"></a><a data-alt="4"
                                                     class="jdgm-star jdgm--off" title="4 stars" role="button"
                                                     aria-label="4 stars"></a><a data-alt="5" class="jdgm-star jdgm--off"
-                                                    title="5 stars" role="button" aria-label="5 stars"></a><input
-                                                    name="score" type="hidden"></span>
+                                                    title="5 stars" role="button" aria-label="5 stars">
+                                                </a><input name="score" type="hidden" value=""></span>
                                         </div>
 
-                                        <div class="jdgm-form__fieldset">
-
+                                        <!-- <div class="jdgm-form__fieldset">
                                             <label class="jdgm-form__inline-label"
-                                                for="jdgm_review_title_32jieu5so">Review
-                                                Title</label><span class="jdgm-countdown"></span>
+                                                for="jdgm_review_title_32jieu5so">Review Title</label><span class="jdgm-countdown"></span>
                                             <input id="jdgm_review_title_32jieu5so" name="review_title" type="text"
                                                 placeholder="Give your review a title" aria-label="Review Title">
-                                        </div>
+                                        </div> -->
 
                                         <div class="jdgm-form__fieldset">
+                                            <label class="jdgm-form__inline-label" for="jdgm_review_body_i483eml">
+                                                Review content
+                                                <span class="jdgm-countdown">(5000)</span>
+                                            </label>
 
-                                            <label class="jdgm-form__inline-label"
-                                                for="jdgm_review_body_32jieu5so">Review
-                                                content</label><span class="jdgm-countdown"></span>
-                                            <textarea id="jdgm_review_body_32jieu5so" rows="5" name="review_body"
-                                                placeholder="Start writing here..."
-                                                aria-label="Review content"></textarea>
+                                            <textarea id="jdgm_review_body_i483eml" rows="5" name="review_body"
+                                                placeholder="Start writing here..." aria-label="Review content"
+                                                aria-required="true"></textarea>
+
+                                            <div id="jdgm_review_body_i483eml-error" class="jdgm-input-error">
+                                                This field is required.
+                                            </div>
                                         </div>
 
 
                                         <div class="jdgm-form__fieldset">
                                             <label>Picture/Video (optional)</label>
-
 
                                             <div class="jdgm-media-fieldset__container">
                                                 <div
@@ -1338,37 +1341,23 @@
                                             </div>
                                         </div>
 
-
-
-
                                         <div class="jdgm-custom-forms"></div>
-
                                         <div class="jdgm-form__fieldset">
-
                                             <label class="jdgm-form__inline-label"
                                                 for="jdgm_review_reviewer_name_32jieu5so">Display name</label>
-
                                             <span class="jdgm-form__reviewer-name-format-container">
                                                 (<label for="jdgm_review_reviewer_name_format_32jieu5so"
-                                                    class="jdgm-form__inline-label jdgm-always-visible">displayed
-                                                    publicly
-                                                    like</label>
+                                                    class="jdgm-form__inline-label jdgm-always-visible">
+                                                    displayed publicly like</label>
                                                 <span class="jdgm-sort-dropdown-wrapper">
                                                     <select id="jdgm_review_reviewer_name_format_32jieu5so"
                                                         name="reviewer_name_format" class="jdgm-sort-dropdown"
                                                         aria-label="Name format">
-
-
                                                         <option value="" selected="">John Smith</option>
-
                                                         <option value="last_initial">John S.</option>
-
                                                         <option value="first_name_only">John</option>
-
                                                         <option value="all_initials">J.S.</option>
-
                                                         <option value="anonymous">Anonymous</option>
-
                                                     </select>
                                                     <span class="jdgm-sort-dropdown-arrow"></span>
                                                 </span>
@@ -1387,11 +1376,10 @@
                                                 aria-label="Email address" aria-required="true">
                                         </div>
 
-                                        <div class="jdgm-form__fieldset">
+                                        <div class="jdgm-form__fieldset" style="font-family: Nunito;">
                                             <p>How we use your data: We'll only contact you about the review you left,
-                                                and
-                                                only if necessary. By submitting your review, you agree to Judge.me's <a
-                                                    href="https://judge.me/terms" target="_blank"
+                                                and only if necessary. By submitting your review, you agree to
+                                                Judge.me's <a href="https://judge.me/terms" target="_blank"
                                                     rel="nofollow noopener">terms</a>, <a
                                                     href="https://judge.me/privacy" target="_blank"
                                                     rel="nofollow noopener">privacy</a> and <a
@@ -1418,8 +1406,7 @@
                                                         data-tier="diamond">
                                                         <div class="jdgm-medal__image" data-url="auth/diamond.svg"
                                                             data-alt="Judge.me Diamond Authentic Shop medal">
-                                                           <img
-                                                                alt="Judge.me Diamond Authentic Shop medal"
+                                                            <img alt="Judge.me Diamond Authentic Shop medal"
                                                                 src="https://judgeme-public-images.imgix.net/judgeme/medals-v2-2025-rebranding/auth/diamond.svg?auto=format">
                                                         </div>
                                                         <div class="jdgm-medal__value ">100.0</div>
@@ -1592,8 +1579,7 @@
                                         <div class="jdgm-rev__content"> <b class="jdgm-rev__title"></b>
                                             <div class="jdgm-rev__body">
                                                 <p>Pretty sure I’m seeing improvement in the smoothness of my skin after
-                                                    30
-                                                    days. Will continue with confidence it’s working.</p>
+                                                    30 days. Will continue with confidence it’s working.</p>
                                             </div>
                                             <div class="jdgm-rev__custom-form"> </div>
                                             <div class="jdgm-rev__transparency-badge-wrapper">
@@ -1681,8 +1667,7 @@
                                             <div class="jdgm-rev__body">
                                                 <p>I LOVE THEM! My legs have gone from late stage 2 to late one!!! Oh my
                                                     gosh! It’s a miracle! I no longer have to worry about elephantitus
-                                                    in my
-                                                    future! Thank you so much!!!!!!</p>
+                                                    in my future! Thank you so much!!!!!!</p>
                                             </div>
                                             <div class="jdgm-rev__custom-form"> </div>
                                             <div class="jdgm-rev__transparency-badge-wrapper">
@@ -1726,8 +1711,8 @@
                                         <div class="jdgm-rev__content"> <b class="jdgm-rev__title"></b>
                                             <div class="jdgm-rev__body">
                                                 <p>It took me about 60 days to notice a difference in smoothness. My
-                                                    husband
-                                                    noticed which is why I purchased another round. I'm happy.</p>
+                                                    husband noticed which is why I purchased another round. I'm happy.
+                                                </p>
                                             </div>
                                             <div class="jdgm-rev__custom-form"> </div>
                                             <div class="jdgm-rev__transparency-badge-wrapper">
@@ -1888,6 +1873,72 @@
         });
     </script>
 
+    <!-- // Star Rating Functionality -->
+    <script>
+        document.querySelectorAll('.jdgm-form__rating').forEach(rating => {
+            const stars = rating.querySelectorAll('.jdgm-star');
+            const input = rating.querySelector('input[name="score"]');
+            let selected = 0;
+
+            function updateStars(value) {
+                stars.forEach(star => {
+                    const starValue = Number(star.dataset.alt);
+                    star.classList.toggle('jdgm--on', starValue <= value);
+                    star.classList.toggle('jdgm--off', starValue > value);
+                });
+            }
+
+            stars.forEach(star => {
+                const value = Number(star.dataset.alt);
+
+                // Hover
+                star.addEventListener('mouseenter', () => {
+                    updateStars(value);
+                });
+
+                // Click
+                star.addEventListener('click', () => {
+                    selected = value;
+                    input.value = value;
+                    updateStars(selected);
+                });
+            });
+
+            // Restore selected state on mouse leave
+            rating.addEventListener('mouseleave', () => {
+                updateStars(selected);
+            });
+        });
+    </script>
+
+    <!-- // Review Textarea Validation Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const textarea = document.querySelector('#jdgm_review_body_i483eml');
+            const error = document.querySelector('#jdgm_review_body_i483eml-error');
+
+            // hide error initially
+            error.style.display = 'none';
+
+            const validate = () => {
+                if (textarea.value.trim() === '') {
+                    error.style.display = 'block';
+                    textarea.classList.add('jdgm-input-error');
+                    textarea.setAttribute('aria-invalid', 'true');
+                } else {
+                    error.style.display = 'none';
+                    textarea.classList.remove('jdgm-input-error');
+                    textarea.setAttribute('aria-invalid', 'false');
+                }
+            };
+
+            // validate on blur (recommended UX)
+            textarea.addEventListener('blur', validate);
+
+            // validate live while typing
+            textarea.addEventListener('input', validate);
+        });
+    </script>
 
     <!-- // Pagination Functionality -->
     <script data-cfasync='false'>
