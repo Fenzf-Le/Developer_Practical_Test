@@ -656,6 +656,10 @@ p {
     transition: all .2s;
 }
 
+.product-selector_atc:hover, .product-selector_atc_champs:hover {
+    opacity: .8;
+}
+
 /* ----- */
 .product_atc-footer-line {
     display: flex;
@@ -1220,6 +1224,10 @@ p {
     transition: all .2s;
     line-height: 1.3em;
     text-align: center;
+}
+
+.product_primary-btn:hover {
+    opacity: 0.7;
 }
 
 .product_primary-btn-footer {
@@ -2615,6 +2623,63 @@ input[type=submit].jdgm-btn {
 .btn_containe {
     margin-top: 40px;
 }
+
+/* FAQ Section */
+.product_faq_container {
+    background: linear-gradient(180deg, #fff, #f3eee0);
+    max-width: 824px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 32px;
+}
+
+.product_faq-box {
+    padding: 20px 24px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.product_faq-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product_faq-thumb p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.product_faq-thumb svg {
+    width: 16px;
+    transition: all .2s;
+}
+
+.product_faq-content {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    transition: all 0.5s ease;
+}
+
+.product_faq-content p {
+    margin: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.product_faq-box.active .product_faq-content {
+    padding-top: 16px;
+}
+
+.product_faq-box.active .product_faq-thumb svg {
+    transform: rotate(180deg);
+}
+
 
 
 /* ------------------=============== Animation ================--------------------- */
