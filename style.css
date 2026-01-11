@@ -2295,6 +2295,77 @@ input[type=submit].jdgm-btn {
     cursor: pointer;
     color: var(--jdgm-paginate-color);
 }
+/* Expert claim Section */
+.main_product-review, .section_press_logos_outer .press_logos_wrapper, .product_judge-outer.pink, .product_ingr-block {
+    background: #f3eee0 !important;
+}
+.product_judge-outer.pink {
+    padding: 32px 0;
+}
+.product_icons-grid {
+    display: flex;
+    gap: 24px;
+}
+.product_icons-grid>div {
+    width: 100%;
+    text-align: center;
+}
+.product_icons-grid img {
+    width: auto;
+    height: 40px;
+    max-width: 40px;
+    display: block;
+    margin: auto auto 16px;
+}
+.product_icons-grid p.h4title {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.product_icons-grid p {
+    font-family: Nunito;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.3em;
+}
+.product_expert-outer {
+    display: flex;
+    background: #f7f7f7;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.product_expert-outer>div {
+    width: 100%;
+}
+.product_expert-content {
+    padding: 32px;
+}
+.product_expert-content p {
+    font-family: Nunito;
+}
+.product_subtitle {
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 0;
+    color: #737373;
+}
+.product-text p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 12px 0;
+}
+.btn_container {
+    margin-top: 24px;
+}
+.product_expert-media img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
 
 
 /* ------------------=============== Animation ================--------------------- */
