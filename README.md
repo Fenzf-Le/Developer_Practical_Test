@@ -22,7 +22,8 @@ This project requires a code editor and a local development server.
 6. The project will open automatically in your browser
 
 ## Project Overview
-/project
+```text
+/Developer_Practical_Test
 ├── index.html
 ├── style.css
 └── README.md
