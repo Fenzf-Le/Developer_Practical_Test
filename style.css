@@ -596,6 +596,89 @@ p {
     /* padding: 0 1.5rem; */
 }
 
+/* Intro popUp Section */
+.nutrition_popup-outer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.nutrition_popup-inner {
+    width: 100%;
+    max-width: 450px;
+    padding: 16px;
+    border-radius: 12px;
+    position: relative;
+    background: #fff;
+}
+
+.nutrition_popup-inner img.nutrition_popup-close {
+    position: absolute;
+    width: 24px;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    border: 1px solid #d5416e;
+}
+
+.nutrition_popup-inner .main_product-title {
+    margin-top: 0;
+}
+
+.nutrition_popup-inner img {
+    width: 100%;
+}
+.nutrition_image {
+    display: block;
+}
+
+.main_product-btn {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    margin: 16px 0;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.main_product-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.main_product-point-line {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.main_product-point-line>div:nth-child(1) {
+    width: 16px;
+    display: flex;
+}
+
+.main_product-point-line p {
+    font-family: Nunito;
+    font-size: 12px !important;
+    margin: 0;
+    line-height: 1.3em;
+}
+
 /* Intro Section */
 .main_product-container {
     display: flex;

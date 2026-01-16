@@ -42,6 +42,64 @@
     </header>
 
     <main>
+        <!--  ------------------=============== Intro popUp Section ================---------------------  -->
+        <section>
+            <div class="nutrition_popup-outer">
+                <div class="nutrition_popup-inner">
+                    <img loading="lazy" class="nutrition_popup-close"
+                        src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Button_To_Expand.png?v=1752069152">
+                    <h2 class="main_product-title centered" style="font-family: Lora">Nutritional Information</h2>
+                    <img class="nutrition_image"
+                        src="//trysculptique.com/cdn/shop/files/ingredients-min.png?v=1758713223">
+                    <div class="main_product-btn">
+                        Try Lymphatic Drainage Risk-Free
+                    </div>
+
+                    <div class="main_product-points">
+                        <div class="main_product-point-line">
+                            <div>
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Mark_Icon_ce1ad4c9-5ec0-4162-969e-b565980ab82b.png?v=1752127285">
+                            </div>
+                            <div>
+                                <p>Made &amp; produced in the USA</p>
+                            </div>
+                        </div>
+
+                        <div class="main_product-point-line">
+                            <div>
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Mark_Icon_ce1ad4c9-5ec0-4162-969e-b565980ab82b.png?v=1752127285">
+                            </div>
+                            <div>
+                                <p>100% Natural Ingredients</p>
+                            </div>
+                        </div>
+
+                        <div class="main_product-point-line">
+                            <div>
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Mark_Icon_ce1ad4c9-5ec0-4162-969e-b565980ab82b.png?v=1752127285">
+                            </div>
+                            <div>
+                                <p>60-Day Money-Back Guarantee</p>
+                            </div>
+                        </div>
+
+                        <div class="main_product-point-line">
+                            <div>
+                                <img
+                                    src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Mark_Icon_ce1ad4c9-5ec0-4162-969e-b565980ab82b.png?v=1752127285">
+                            </div>
+                            <div>
+                                <p>Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--  ------------------=============== Intro Section ================---------------------  -->
         <section class="relative py-[32px]">
             <div class="mx-auto page-width">
@@ -1196,7 +1254,7 @@
             </div>
         </section>
 
-        <!--  ------------------=============== Carousel ================---------------------  -->
+        <!--  ------------------=============== Carousel Section ================---------------------  -->
         <section class="bg-[#F3EEE0]">
             <div class="section_press_logos_outer ">
                 <div id="press_ress">
@@ -3121,6 +3179,51 @@
         </section>
 
     </main>
+
+    <!-- // Open PopUp Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const trigger = document.querySelector('.main_product-nutrition-info');
+            const popup = document.querySelector('.nutrition_popup-outer');
+            const closeBtn = document.querySelector('.nutrition_popup-close');
+
+            if (!trigger || !popup) return;
+
+            // OPEN popup
+            trigger.addEventListener('click', function () {
+                popup.style.display = 'flex';
+                // prevent background scroll
+                // document.body.style.overflow = 'hidden'; 
+            });
+
+            // CLOSE popup (close button)
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    closePopup();
+                });
+            }
+
+            // CLOSE popup (click overlay)
+            popup.addEventListener('click', function (e) {
+                if (e.target === popup) {
+                    closePopup();
+                }
+            });
+
+            // CLOSE popup (ESC key)
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closePopup();
+                }
+            });
+
+            function closePopup() {
+                popup.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 
     <!-- // CheckList Offer Functionality -->
     <script>
