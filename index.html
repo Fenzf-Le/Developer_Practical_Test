@@ -1389,7 +1389,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img loading="lazy" class='Desktop_only'
+                                <img loading="lazy"
                                     src="//trysculptique.com/cdn/shop/files/Frame_1484580366_1.png?v=1760701546">
                             </div>
                         </div>
@@ -1829,7 +1829,7 @@
 
         <!-- ------------------=============== Reviews Section ================---------------------  -->
         <section>
-            <div class="product_judge-outer">
+            <div class="product_judge-outer reviews">
                 <div class="page-width mx-auto">
                     <div class="product_judge-container">
                         <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_Score.png?v=1752349211"
@@ -3175,9 +3175,17 @@
 
     <!-- // Accordion Ingredient Info Toggle Functionality -->
     <script>
-        document.querySelectorAll('.product-lymph-ingredient').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('active');
+        document.querySelectorAll('.product-lymph-ingredient').forEach(block => {
+            const content = block.querySelector('.product_lymph-ingr-content');
+            block.addEventListener('click', () => {
+                if (block.classList.contains('active')) {
+                    content.style.maxHeight = null;
+                    block.classList.remove('active');
+                } else {
+                    // Add extra pixels to account for padding
+                    content.style.maxHeight = (content.scrollHeight + 12) + 'px';
+                    block.classList.add('active');
+                }
             });
         });
     </script>
